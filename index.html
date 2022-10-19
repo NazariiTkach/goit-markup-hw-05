@@ -58,7 +58,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button-hero" type="button">Замовити послугу</button>
+          <button class="button-hero" data-modal-open type="button">Замовити послугу</button>
         </div>
       </section>
 
@@ -122,25 +122,40 @@
           <h3 class="title-primary">Чим ми займаємося</h3>
           <ul class="features-images">
             <li>
+              <div class="activity">
               <img
                 src="./images/box1.jpg"
                 alt="набирання коду на клавіатурі"
                 width="400"
               />
+                <div class="activity-title">
+                  <p>Мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li>
+              <div class="activity">
               <img
                 src="./images/box2.jpg"
                 alt="розробка мобільних додатків"
                 width="400"
               />
+                <div class="activity-title">
+                  <p>Мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li>
+              <div class="activity">
               <img
                 src="./images/box3.jpg"
                 alt="малювання на планшеті"
                 width="400"
               />
+                <div class="activity-title">
+                  <p>Мобільні додатки</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -387,5 +402,15 @@
       </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-close" data-modal-close type="button">
+          <svg width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-button-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
