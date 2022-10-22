@@ -210,6 +210,7 @@ body {
 }
 
 .header-link-icon {
+  fill: currentColor;
   margin-right: 10px;
 }
 
@@ -298,6 +299,27 @@ body {
 
 .activity {
   position: relative;
+}
+
+.activity-title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  margin: 0;
+  padding: 27px 0;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+/* .activity {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -321,7 +343,7 @@ body {
   line-height: 1.143;
   text-transform: uppercase;
   color: var(--white-color);
-}
+} */
 
 /* Team */
 
@@ -524,14 +546,12 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--white-color);
 
-  transition: background-color var(--timing-function),
-    fill var(--timing-function);
+  transition: background-color var(--timing-function);
 }
 
 .social-link-footer:hover,
 .social-link-footer:focus {
   background-color: var(--accent-color);
-  fill: var(--white-color);
 }
 
 /* Button */
@@ -553,6 +573,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 
   transition: background-color var(--timing-function);
 }
@@ -561,7 +582,6 @@ body {
 .button-hero:focus {
   color: var(--white-color);
   background-color: #188ce8;
-  cursor: pointer;
 }
 
 .button-nav {
@@ -585,6 +605,7 @@ body {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 
   transition: color var(--timing-function),
     background-color var(--timing-function), box-shadow var(--timing-function);
@@ -596,7 +617,6 @@ body {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
 }
 
 /* Portfolio */
@@ -636,7 +656,6 @@ body {
 
 .projects-link:hover .card-overlay {
   transform: translateY(0);
-  
 }
 
 .projects-list {
@@ -698,9 +717,8 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transform: translateY(0);
-  transition: opacity var(--timing-function),
-   visibility var(--timing-function),
-   transform var(--timing-function);
+  transition: opacity var(--timing-function), visibility var(--timing-function),
+    transform var(--timing-function);
 }
 
 .is-hidden {
